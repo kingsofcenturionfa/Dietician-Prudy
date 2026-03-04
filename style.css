@@ -198,7 +198,7 @@ nav {
 /* ABOUT PAGE HERO */
 /* ============================= */
 .about-hero {
-    background-image: url("images/slogan.jpg.jpeg"); 
+    background-image: url("images/slogan.jpeg"); /* CHANGE if filename differs */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
