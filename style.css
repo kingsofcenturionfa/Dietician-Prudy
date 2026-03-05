@@ -349,4 +349,97 @@ footer {
     text-align: center;
     padding: 20px;
 }
+/* ============================= */
+/* PAGE INTRO (CONTACT HEADER) */
+/* ============================= */
+
+.page-intro {
+    background: linear-gradient(to right, #e8f5e9, #ffffff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.page-intro h1 {
+    font-size: 40px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.page-intro p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* CONTACT INFORMATION */
+/* ============================= */
+
+.contacts {
+    padding: 70px 20px;
+    background-color: #ffffff;
+}
+
+.contacts .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 25px;
+}
+
+.contacts p {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+
+/* ============================= */
+/* WHATSAPP BOOKING SECTION */
+/* ============================= */
+
+.booking-whatsapp {
+    background-color: #2e7d32;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.booking-whatsapp h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.booking-whatsapp p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* ============================= */
+/* WHATSAPP BUTTON */
+/* ============================= */
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-3px);
+}
 
