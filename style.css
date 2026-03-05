@@ -289,6 +289,48 @@ nav {
     line-height: 1.7;
     font-size: 17px;
 }
+/* ABOUT PAGE HERO BACKGROUND */
+
+.about-hero {
+    background-image: url("images/slogan.jpg.jpeg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dark overlay so text is readable */
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* center the content */
+.about-hero .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
 
 /* ============================= */
 /* FOOTER */
