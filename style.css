@@ -1,4 +1,6 @@
-/* ===== GLOBAL ===== */
+/* ============================= */
+/* RESET */
+/* ============================= */
 
 *{
 margin:0;
@@ -8,133 +10,414 @@ box-sizing:border-box;
 
 body{
 font-family: Arial, Helvetica, sans-serif;
-line-height:1.6;
-background:#f9f9f9;
+background-color:#fafafa;
 color:#333;
+line-height:1.6;
 }
 
-/* ===== NAVBAR ===== */
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
+
+/* ============================= */
+/* HEADER & NAVIGATION */
+/* ============================= */
 
 header{
 background:white;
-padding:15px 30px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px 40px;
 }
 
-nav ul{
+.logo img{
+height:85px;
+}
+
+.nav-links{
 list-style:none;
 display:flex;
-gap:20px;
+gap:30px;
+align-items:center;
 }
 
-nav a{
+.nav-links a{
 text-decoration:none;
 color:#333;
 font-weight:600;
+transition:0.3s ease;
 }
 
-nav a:hover{
-color:#2e8b57;
+.nav-links a:hover,
+.nav-links .active{
+color:#2e7d32;
 }
 
-/* ===== PAGE INTRO ===== */
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.btn{
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s ease;
+}
+
+.nav-btn{
+background-color:#2e7d32;
+color:white;
+}
+
+.nav-btn:hover{
+background-color:#1b5e20;
+}
+
+.primary-btn{
+background-color:#2e7d32;
+color:white;
+}
+
+.primary-btn:hover{
+background-color:#1b5e20;
+}
+
+.whatsapp-btn{
+background-color:#25D366;
+color:white;
+}
+
+.whatsapp-btn:hover{
+background-color:#1ebe5d;
+transform:translateY(-3px);
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero{
+padding:90px 20px;
+background:linear-gradient(to right,#f1f8f4,#ffffff);
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:60px;
+max-width:1100px;
+margin:auto;
+}
+
+.hero-text h1{
+font-size:46px;
+color:#1b5e20;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+color:#555;
+margin-bottom:25px;
+}
+
+.hero-image img{
+width:100%;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ============================= */
+/* ABOUT PREVIEW */
+/* ============================= */
+
+.about{
+background:white;
+padding:80px 40px;
+}
+
+.about h2{
+margin-bottom:20px;
+color:#2e7d32;
+}
+
+/* ============================= */
+/* APPOINTMENTS */
+/* ============================= */
+
+.appointments{
+background-color:#2e7d32;
+color:white;
+padding:80px 40px;
+text-align:center;
+}
+
+.appointments h2,
+.appointments p{
+margin-bottom:20px;
+}
+
+/* ============================= */
+/* NUTRITION TIPS */
+/* ============================= */
+
+.nutrition-tips{
+background:white;
+padding:80px 40px;
+}
+
+.nutrition-tips h2{
+text-align:center;
+margin-bottom:30px;
+color:#2e7d32;
+}
+
+.tips-list{
+list-style:none;
+max-width:800px;
+margin:auto;
+}
+
+.tips-list li{
+background:#f2f2f2;
+padding:15px 20px;
+margin-bottom:15px;
+border-left:5px solid #2e7d32;
+border-radius:5px;
+}
+
+/* ============================= */
+/* ABOUT HERO */
+/* ============================= */
+
+.about-hero{
+position:relative;
+background-image:url("images/slogan.jpg.jpeg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:70vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.about-hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.5);
+}
+
+.about-hero .container{
+position:relative;
+color:white;
+text-align:center;
+}
+
+.about-hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.about-hero p{
+font-size:18px;
+line-height:1.6;
+max-width:650px;
+margin:auto;
+}
+
+/* ============================= */
+/* ABOUT DETAILS */
+/* ============================= */
+
+.about-details{
+padding:80px 40px;
+background:#f9f9f9;
+text-align:center;
+}
+
+.about-details h2{
+font-size:30px;
+margin-bottom:50px;
+color:#2e7d32;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.about-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.about-card h3{
+margin-bottom:15px;
+color:#2e7d32;
+}
+
+/* ============================= */
+/* ABOUT MISSION */
+/* ============================= */
+
+.about-mission{
+padding:80px 40px;
+text-align:center;
+}
+
+.about-mission h2{
+font-size:28px;
+margin-bottom:20px;
+color:#2e7d32;
+}
+
+.about-mission p{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+font-size:17px;
+}
+
+/* ============================= */
+/* PAGE INTRO */
+/* ============================= */
 
 .page-intro{
-background:#2e8b57;
-color:white;
-padding:60px 20px;
+background:linear-gradient(to right,#e8f5e9,#ffffff);
+padding:80px 20px;
 text-align:center;
 }
 
 .page-intro h1{
-font-size:32px;
-margin-bottom:10px;
+font-size:40px;
+color:#2e7d32;
+margin-bottom:20px;
 }
 
-/* ===== CONTACT SECTION ===== */
+.page-intro p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+color:#555;
+line-height:1.6;
+}
+
+/* ============================= */
+/* CONTACT SECTION */
+/* ============================= */
 
 .contacts{
-padding:40px 20px;
+padding:70px 20px;
+background:#ffffff;
+}
+
+.contacts .container{
+max-width:800px;
+margin:auto;
 text-align:center;
 }
 
 .contacts h2{
-margin-bottom:15px;
+font-size:32px;
+color:#2e7d32;
+margin-bottom:25px;
 }
 
-/* ===== WHATSAPP BOOKING ===== */
+.contacts p{
+font-size:17px;
+margin-bottom:12px;
+color:#444;
+}
+
+/* ============================= */
+/* BOOKING */
+/* ============================= */
 
 .booking-whatsapp{
-padding:40px 20px;
+background:#2e7d32;
+color:white;
+padding:80px 20px;
 text-align:center;
 }
 
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-margin-top:15px;
+.booking-whatsapp h2{
+font-size:34px;
+margin-bottom:20px;
 }
 
-.btn:hover{
-background:#1ebe5d;
+.booking-whatsapp p{
+font-size:18px;
+margin-bottom:30px;
 }
 
-/* ===== SERVICES SECTION ===== */
+/* ============================= */
+/* SERVICES */
+/* ============================= */
 
 .services{
-padding:50px 20px;
+padding:80px 20px;
+background:#f9f9f9;
 }
 
 .services h2{
 text-align:center;
-margin-bottom:30px;
+font-size:34px;
+color:#2e7d32;
+margin-bottom:40px;
 }
 
 .services-list{
+list-style:none;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
+max-width:1000px;
+margin:auto;
 }
 
-.service-box{
+.services-list li{
 background:white;
-padding:20px;
+padding:20px 25px;
 border-radius:8px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+border-left:5px solid #2e7d32;
+font-size:16px;
+line-height:1.5;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+transition:0.3s ease;
 }
 
-.service-box h3{
-color:#2e8b57;
-margin-bottom:10px;
+.services-list li:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
 }
 
-/* ===== MOBILE ===== */
+/* ============================= */
+/* FOOTER */
+/* ============================= */
 
-@media (max-width:768px){
-
-nav{
-flex-direction:column;
-gap:10px;
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
 }
 
-nav ul{
-flex-direction:column;
-align-items:center;
-}
-
-.page-intro h1{
-font-size:26px;
-}
-
-}
